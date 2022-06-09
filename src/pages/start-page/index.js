@@ -1,3 +1,10 @@
+// import Swiper JS
+import Swiper from 'swiper';
+// import Swiper styles
+import 'swiper/css';
+
+const swiper = new Swiper(...);
+
 $(function () {
     $('.slider').slick({
         arrows: true,
@@ -14,18 +21,14 @@ $(function () {
         pauseOnHover: true,
         pauseOnDotsHover: true,
         responsive: [{
-                breakpoint: 540,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    dots: true,
-                }
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
+        }]
 
     });
 });
